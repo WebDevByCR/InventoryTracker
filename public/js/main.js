@@ -315,7 +315,7 @@ document.addEventListener('DOMContentLoaded', () => {
     fetchItems();
   } else {
     console.error("Table element with ID 'items-table' not found.");
-  }
+  } 
   document.getElementById('filter-category').addEventListener('change', filterItemsByCategory);
   document.getElementById('filter-name').addEventListener('input', filterItems);
   document.getElementById('add-item-button').addEventListener('click', addItem);
