@@ -1,18 +1,14 @@
 import NeDB from 'nedb';
-import path from 'path';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 // Items Database
 const itemsDb = new NeDB({
-  filename: process.env.ITEMS_DB_PATH || './data/items.db',
+  filename: './data/items.db',
   autoload: true,
 });
 
 // Categories Database
 const categoriesDb = new NeDB({
-  filename: process.env.CATEGORIES_DB_PATH || './data/categories.db',
+  filename: './data/categories.db',
   autoload: true,
 });
 
