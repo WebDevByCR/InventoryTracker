@@ -1,14 +1,19 @@
 import NeDB from 'nedb';
+import path from 'path';
+
+const __dirname = path.resolve();
+const itemsPath = path.join(__dirname, 'data', 'items.db')
+const categoriesPath = path.join(__dirname, 'data', 'categories.db');
 
 // Items Database
 const itemsDb = new NeDB({
-  filename: './data/items.db',
+  filename: itemsPath,
   autoload: true,
 });
 
 // Categories Database
 const categoriesDb = new NeDB({
-  filename: './data/categories.db',
+  filename: categoriesPath,
   autoload: true,
 });
 
