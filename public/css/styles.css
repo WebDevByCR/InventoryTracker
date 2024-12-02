@@ -1,0 +1,96 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  width: 80%;
+  margin: 0 auto;
+}
+
+h1 {
+  color: white;
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+input, select, button {
+  padding: 10px;
+  margin: 5px;
+}
+
+button {
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.items-title-wrapper {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+  width: 80%;
+  padding: 5px;
+  margin: 0 auto; /* Center the div */
+}
+
+.items-title {
+  color: white;
+}
+
+th input, th select {
+  margin-top: 5px;
+  padding: 5px;
+  box-sizing: border-box;
+  width: 100px; /* Adjust width as needed */
+}
+
+.edit-icon, .delete-icon {
+  cursor: pointer;
+  color: gray; /* Set the color to grayscale */
+  font-family: "Arial", sans-serif; /* Ensure it's Arial */
+  font-size: 16px; /* Adjust size as needed */
+  border: 1px solid gray; /* Add gray outline */
+  border-radius: 3px; /* Slightly round the corners */
+  padding: 2px; /* Add padding to make it look more like an icon */
+}
+
+.edit-form input, .edit-form select, .edit-form button {
+  margin: 0 5px; /* Adjust margins for spacing */
+}
